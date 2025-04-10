@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        background-color: sandybrown;
+        letter-spacing: 0.1rem;
+      }
+      .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        background: #000;
+        color: #fff;
+        font-size: 25px;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .header h3 {
+        color: orangered;
+      }
+      .bar a {
+        margin-left: 2.5rem;
+        text-decoration: none;
+        color: #fff;
+      }
+      .aboutMe {
+        width: 100%;
+        height: 700px;
+        background: teal;
+        text-align: center;
+        padding-top: 150px;
+        color: white;
+        font-size: 20px;
+      }
+      .aboutMe h3 {
+        color: rgb(57, 219, 59);
+        font-size: 25px;
+        font-weight: 800;
+        text-decoration: underline;
+      }
+
+      .projects {
+        margin-top: 5rem;
+        text-align: center;
+        background: teal;
+        height: 700px;
+      }
+      .projects h3 {
+        padding: 5rem;
+        color: rgb(57, 219, 59);
+        font-size: 25px;
+        font-weight: 800;
+        text-decoration: underline;
+      }
+      .projectContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2.5rem;
+      }
+      .projects .box {
+        width: 400px;
+        height: 350px;
+        border: none;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 0.5rem #000;
+      }
+      .projects .box img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .box h4 {
+        color: #cc6f1e;
+        font-size: 1.4rem;
+      }
+      .box p {
+        font-size: 1rem;
+      }
+
+      .box a i {
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+      .contact {
+        width: 100%;
+        height: 700px;
+        background: teal;
+        text-align: center;
+        margin-top: 80px;
+        color: white;
+        font-size: 20px;
+      }
+
+      .contact h3 {
+        padding: 2rem;
+        color: rgb(57, 219, 59);
+        font-size: 25px;
+        font-weight: 800;
+        text-decoration: underline;
+      }
+
+      .inputField {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+      }
+      .inputField input {
+        width: 20rem;
+        height: 3rem;
+        border-radius: 1rem;
+        text-align: center;
+        border: none;
+        font-size: 1rem;
+      }
+      textarea {
+        resize: none;
+        width: 20rem;
+        height: 9rem;
+        border-radius: 0.8rem;
+        text-align: center;
+        padding-top: 0.5rem;
+        font-size: 1rem;
+      }
+      .btn {
+        width: 15rem;
+        height: 3rem;
+        border-radius: 1rem;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 0.5rem;
+        background: #000;
+        color: #fff;
+      }
+      .btn:hover {
+        background: #fff;
+        color: #000;
+      }
+      .footer {
+        height: 300px;
+        width: 100%;
+        background: orangered;
+        text-align: center;
+      }
+      .footer h3 {
+        padding: 1rem;
+        font-size: 1.3rem;
+        font-weight: 800;
+      }
+      .footerBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        line-height: 2rem;
+        color: #fff;
+      }
+      .socialMedia i {
+        font-size: 2rem;
+        color: aquamarine;
+      }
+      .socialMedia {
+        margin-bottom: 1.5rem;
+      }
+      .footer h4 {
+        color: blue;
+        font-size: 1.1rem;
+        font-weight: 800;
+      }
+
+      .footer .copyRight {
+        padding-top: 5rem;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h3>Hopson</h3>
+      <nav>
+        <div class="bar">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="aboutMe" id="about">
+      <h3>About Me</h3>
+      <p>
+        Hello! I'm Hopson, based in Manipur, India. Talking about my Developer
+        journey I can honestly say it's been a beautiful journey and I hope to
+        grow even further as Software Engineer. My focused is in creating
+        interactive digital experiences on the web.
+      </p>
+    </section>
+
+    <section class="projects" id="projects">
+      <h3>My Projects</h3>
+      <div class="projectContainer">
+        <div class="pOne box">
+          <img src="images/Amazon-Clone.png" />
+          <h4>Amazon Clone</h4>
+          <p>
+            This project is a basic replica of the Amazon website made with HTML
+            and CSS only.
+          </p>
+          <a
+            href="https://github.com/HopsonKhwairakpam/Amazon-Clone-Project"
+            target="_blank"
+            ><i class="fa-solid fa-link"></i
+          ></a>
+        </div>
+        <div class="pTwo box">
+          <img src="images/Quiz-App.png" />
+          <h4>Quiz App</h4>
+          <p>
+            This is an interactive quiz app built with HTML, CSS JavaScript.
+          </p>
+          <a
+            href="https://github.com/HopsonKhwairakpam/Quiz-App.git"
+            target="_blank"
+            ><i class="fa-solid fa-link"></i
+          ></a>
+        </div>
+        <div class="pThree box">
+          <img src="images/Rock-Paper-Scissor.png" />
+          <h4>Rock-Paper-Scissors-Game</h4>
+          <p>
+            This project is a fun and interactive Rock Paper Scissors game built
+            with HTML, CSS, and JavaScript.
+          </p>
+          <a
+            href="https://github.com/HopsonKhwairakpam/Rock-Paper-Scissors-Game.git"
+            target="_blank"
+            ><i class="fa-solid fa-link"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h3>Get in touch</h3>
+      <form action="contactForm">
+        <div class="formContainer">
+          <div class="inputField">
+            <label for="name"></label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="inputField">
+            <label for="email"></label>
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+          ></textarea>
+        </div>
+        <input type="submit" placeholder="Submit" class="btn" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <h3>Contact Me</h3>
+      <div class="footerBox">
+        <div class="contactNo">
+          <h4>Email</h4>
+          <p>akummoajamir174@gmail.com</p>
+          <p>+918131902172</p>
+        </div>
+        <div class="socialMedia">
+          <h4>Social Media</h4>
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-square-github"></i></a>
+        </div>
+      </div>
+      <p class="copyRight">&copy; 2025 Hopson Khwairakpam</p>
+    </footer>
+  </body>
+</html>
