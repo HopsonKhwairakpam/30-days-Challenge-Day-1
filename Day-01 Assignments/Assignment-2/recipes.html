@@ -4,6 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Menu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #fff;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background: #000;
+        color: #fff;
+      }
+
+      .header h1 {
+        font-family: "Pacifico", cursive;
+        font-size: 2.8rem;
+      }
+
+      .header a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 25px;
+        margin-left: 20px;
+      }
+
+      .mainContainer {
+        background: #000;
+        width: 100%;
+
+        border-top: 2px solid grey;
+      }
+
+      .slogan {
+        text-align: center;
+      }
+
+      .slogan h3 {
+        font-size: 40px;
+        font-family: "Pacifico", cursive;
+        font-weight: 100;
+      }
+
+      .imageBox img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        box-shadow: 0 3px 3px 3px rgb(221, 214, 214);
+      }
+
+      .imageBox {
+        text-align: center;
+      }
+
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        text-align: left;
+        margin-top: 25px;
+        border-bottom: 1px solid grey;
+      }
+
+      .article {
+        width: 300px;
+      }
+
+      .article p {
+        text-decoration: underline;
+        font-size: 25px;
+      }
+      .article .para1 {
+        font-size: 20px;
+        text-decoration: none;
+        color: orangered;
+      }
+
+      footer {
+        width: 100%;
+        height: 200px;
+        background: #141313;
+        text-align: center;
+      }
+
+      .footer h2 {
+        font-size: 30px;
+        padding-top: 10px;
+      }
+
+      .icons i {
+        font-size: 25px;
+        line-height: 30px;
+        letter-spacing: 5px;
+        color: teal;
+      }
+
+      .icons i:hover {
+        background-color: #fff;
+        border-radius: 20%;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -21,14 +133,270 @@
       </section>
       <section class="imageContainer">
         <div class="imageBox">
-          <img src="images/Carprese salad.jpg" />
-          <img src="images/image2.jpeg" />
-          <img src="images/Paneer-butter-masala-recipe-3.jpg" />
-          <img src="images/quesadilla.jpg" />
-          <img src="images/Spaghetti-Aglio-Olio-3-1.jpg" />
-          <img src="images/VegetableStirFry_9.jpg" />
+          <div class="box box1">
+            <h2>Caprese Salad</h2>
+            <img src="images/Carprese salad.jpg" />
+            <article class="article">
+              <p>Ingredients</p>
+              <ul>
+                <li>4 large ripe tomatoes, sliced 1/4 inch thick.</li>
+                <li>1 pound fresh mozzarella cheese, sliced 1/4 inch thick.</li>
+                <li>⅓ cup fresh basil leaves.</li>
+                <li>3 tablespoons extra virgin olive oil.</li>
+                <li>fine sea salt and freshly ground black pepper to taste.</li>
+              </ul>
+              <p>Steps</p>
+              <ol>
+                <li>
+                  Arrange sliced ripe tomatoes and sliced mozzarella on a
+                  platter in an alternating pattern.
+                </li>
+                <li>
+                  Scatter the basil leaves over the tomatoes and mozzarella.
+                </li>
+                <li>
+                  Sprinkle with a generous pinch of flaky salt and several
+                  grinds of black pepper, to taste.
+                </li>
+                <li>
+                  Drizzle 2 tablespoons extra-virgin olive oil and 2 tablespoons
+                  balsamic glaze over the tomatoes, mozzarella, and basil. Serve
+                  immediately.
+                </li>
+              </ol>
+            </article>
+          </div>
+          <div class="box box2">
+            <h2>Pan-seared Salmon</h2>
+            <img src="images/image2.jpeg" />
+            <article class="article">
+              <p>Ingredients</p>
+              <ul>
+                <li>1 tablespoon extra-virgin olive oil</li>
+                <li>½ teaspoon kosher salt</li>
+                <li>Freshly ground black pepper</li>
+                <li>
+                  4 (6-ounce) salmon fillets, 1¼ in thick (I have my fish monger
+                  remove the skin, but it's fine to leave it on if you like)
+                </li>
+              </ul>
+              <p>Steps</p>
+              <ol>
+                <li>
+                  Season the salmon with the salt and a few grinds of pepper.
+                </li>
+                <li>
+                  Heat the oil in a 12-inch nonstick skillet over medium-high
+                  heat until hot and shimmering.
+                </li>
+                <li>
+                  Cook the salmon, without moving, skin side up, until golden
+                  and crisp, about 4 minutes.
+                </li>
+                <li>
+                  Carefully flip the fillets and reduce the heat to medium.
+                </li>
+                <li>
+                  Continue cooking until done to your liking, 4 to 5 minutes
+                  more. Transfer to a platter and serve.
+                </li>
+              </ol>
+            </article>
+          </div>
+          <div class="box box3">
+            <h2>Paneer Butter Masala</h2>
+            <img src="images/Paneer-butter-masala-recipe-3.jpg" />
+            <article class="article">
+              <p>Ingredient Essentials</p>
+              <p class="para1">For the sauce:</p>
+              <ul>
+                <li>2 large onions, thinly sliced</li>
+                <li>2 cloves of garlic, minced</li>
+                <li>2 medium tomatoes, diced</li>
+                <li>1 tablespoon butter</li>
+                <li>1 tablespoon oil</li>
+                <li>1 tablespoon cumin seeds</li>
+                <li>1 teaspoon coriander powder</li>
+                <li>1 teaspoon garam masala powder</li>
+                <li>1 teaspoon turmeric powder</li>
+                <li>1 teaspoon red chili powder (optional)</li>
+                <li>Salt, to taste</li>
+                <li>2 tablespoons tomato puree</li>
+                <li>2 tablespoons heavy cream or yogurt</li>
+                <li>Fresh cilantro, for garnish</li>
+              </ul>
+              <p class="para1">For the paneer:</p>
+              <ul>
+                <li>250 grams paneer (Indian cheese), cut into small cubes</li>
+                <li>1 tablespoon butter</li>
+                <li>1 teaspoon cumin seeds</li>
+                <li>Salt, to taste</li>
+              </ul>
+              <p>Steps</p>
+              <ol>
+                <li>Prepare the Paneer.</li>
+                <li>Make the Sauce.</li>
+                <li>Combine the Paneer and Sauce.</li>
+                <li>Finish with Butter and Cilantro.</li>
+              </ol>
+            </article>
+          </div>
+          <div class="box box4">
+            <h2>Quesadilla</h2>
+            <img src="images/quesadilla.jpg" />
+            <article class="article">
+              <p>Ingredients</p>
+              <ul>
+                <li>8 (8-inch) flour tortillas</li>
+                <li>1½ cups grated sharp cheddar cheese</li>
+                <li>1½ cups grated Monterey Jack cheese</li>
+                <li>¾ cup cooked black beans, drained and rinsed</li>
+                <li>½ red bell pepper, stemmed, seeded, and diced</li>
+                <li>4 scallions, thinly sliced</li>
+                <li>½ cup corn kernels, thawed if frozen</li>
+                <li>2 jalapeño peppers, thinly sliced</li>
+              </ul>
+              <p class="para1">For serving:</p>
+              <ul>
+                <li>Homemade Salsa or Salsa Verde</li>
+                <li>Pico de Gallo</li>
+                <li>Guacamole</li>
+              </ul>
+              <p>Steps</p>
+              <ol>
+                <li>Lay the tortillas flat on a clean work surface.</li>
+                <li>
+                  In a medium bowl, place the cheddar and Jack cheeses and toss
+                  to combine.
+                </li>
+                <li>
+                  Sprinkle half the cheese evenly over one half of each
+                  tortilla, leaving the other half bare. Evenly sprinkle the
+                  black beans, red peppers, scallions, corn, and jalapeños over
+                  the cheese. Top with the remaining cheese, then fold the bare
+                  half of each tortilla over the fillings to create a half-moon
+                  shape.
+                </li>
+              </ol>
+            </article>
+          </div>
+          <div class="box box5">
+            <h2>Spaghetti Aglio Olio</h2>
+            <img src="images/Spaghetti-Aglio-Olio-3-1.jpg" />
+            <article class="article">
+              <p>Ingredients</p>
+              <ul>
+                <li>Spaghetti: 12 ounces (about 340g)</li>
+                <li>Extra virgin olive oil: 1/4 to 1/2 cup</li>
+                <li>Garlic: 4-6 cloves, minced or thinly sliced</li>
+                <li>Red pepper flakes: 1/4 to 1/2 teaspoon, or to taste</li>
+                <li>Fresh parsley: 1/4 to 1/3 cup, chopped</li>
+                <li>Salt: To taste</li>
+                <li>Black pepper: To taste (optional)</li>
+                <li>Parmesan cheese: For serving (optional)</li>
+                <li>Lemon juice: 1 teaspoon, optional</li>
+                <li>Lemon zest: 1 teaspoon, optional</li>
+                <li>
+                  Pasta water: 1/2 to 1 cup, reserved from cooking the pasta
+                </li>
+              </ul>
+              <p>Steps</p>
+              <ol>
+                <li>
+                  Cook the pasta: Bring a large pot of salted water to a boil
+                  and cook the spaghetti according to package directions until
+                  al dente. Reserve 1/2 to 1 cup of pasta water before draining
+                  the pasta.
+                </li>
+                <li>
+                  Sauté the garlic: Heat the olive oil in a large skillet over
+                  medium heat. Add the garlic and red pepper flakes and cook
+                  until the garlic is lightly browned, about 30 seconds to 1
+                  minute.
+                </li>
+                <li>
+                  Add the parsley and lemon juice/zest (optional): Add the
+                  parsley, lemon juice, and lemon zest (if using) to the
+                  skillet.
+                </li>
+                <li>
+                  Combine with pasta: Add the cooked spaghetti to the skillet
+                  and toss to combine.
+                </li>
+                <li>
+                  Adjust consistency with pasta water: Add a little of the
+                  reserved pasta water to create a light sauce, if needed.
+                </li>
+                <li>
+                  Season and serve: Season with salt and pepper to taste. Serve
+                  with Parmesan cheese, if desired.
+                </li>
+              </ol>
+            </article>
+          </div>
+          <div class="box box6">
+            <h2>Vegetable Stir Fry</h2>
+            <img src="images/VegetableStirFry_9.jpg" />
+            <article class="article">
+              <p>Ingredients</p>
+              <ul>
+                <li>2 tablespoons extra-virgin olive oil</li>
+                <li>1 red bell pepper, stemmed, seeded, and sliced</li>
+                <li>1 yellow bell pepper, stemmed, seeded, and sliced</li>
+                <li>8 ounces cremini mushrooms, stemmed and sliced</li>
+                <li>3 cups small broccoli florets</li>
+                <li>1 cup sugar snap peas</li>
+                <li>1 cup thinly sliced carrots</li>
+                <li>3 green onions, thinly sliced</li>
+                <li>Sesame seeds, for garnish</li>
+              </ul>
+              <p class="para1">Stir Fry Sauce:</p>
+              <ul>
+                <li>½ cup water</li>
+                <li>⅓ cup low-sodium soy sauce</li>
+                <li>1 tablespoon honey or brown sugar</li>
+                <li>1 tablespoon rice vinegar</li>
+                <li>2 teaspoons toasted sesame oil</li>
+                <li>2 garlic cloves, grated</li>
+                <li>2 teaspoons grated fresh ginger</li>
+                <li>1 tablespoon cornstarch</li>
+                <li>½ teaspoon red pepper flakes, optional</li>
+              </ul>
+              <p>Steps</p>
+              <ol>
+                <li>
+                  Make the stir fry sauce: In a medium bowl, whisk together the
+                  water, soy sauce, honey, rice vinegar, sesame oil, garlic,
+                  ginger, cornstarch, and red pepper flakes, if using.
+                </li>
+                <li>
+                  Make the stir fry. Heat the olive oil in a large skillet or
+                  wok over high heat. Add the red and yellow peppers, mushrooms,
+                  broccoli, snap peas, and carrots and toss. Cook, stirring
+                  occasionally, for 3 to 4 minutes, or until the vegetables
+                  soften slightly.
+                </li>
+                <li>
+                  Reduce the heat to medium and pour in the stir fry sauce. Stir
+                  and cook for 1 to 2 minutes, or until the sauce thickens and
+                  the vegetables are crisp-tender. Season to taste. Top with the
+                  green onions and sesame seeds and serve.
+                </li>
+              </ol>
+            </article>
+          </div>
         </div>
       </section>
     </main>
+    <footer class="footer" id="contact">
+      <h2>Contact</h2>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+      <p>Copyright &copy; Hopson Khwairakpam 2025</p>
+    </footer>
   </body>
 </html>

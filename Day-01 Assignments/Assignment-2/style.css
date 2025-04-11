@@ -87,4 +87,5 @@
 .icons i:hover {
     background-color: #fff;
     border-radius: 20%;
+    cursor: pointer;
 }
